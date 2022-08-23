@@ -15,7 +15,17 @@ a:active {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.4rem 2rem;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 10%;
 }
 
 .navbar {
