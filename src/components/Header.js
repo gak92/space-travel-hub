@@ -3,7 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <div className="header">
-    <h1>Space Travelers hub</h1>
+    <div>
+      <img src="src\images\planet.png" alt="space" />
+      <h1>Space Travelers hub</h1>
+    </div>
     <nav className="navbar">
       <NavLink to="/">Rockets</NavLink>
       <NavLink to="/missions">Missions</NavLink>
