@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <hr className="horizontal-line" />
       <Routes>
         <Route path="/missions" element={<Missions />} />
         <Route path="/myprofile" element={<MyProfile />} />
