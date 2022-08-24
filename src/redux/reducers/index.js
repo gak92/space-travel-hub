@@ -1,8 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import rocketsReducer from './rocketsReducer';
+import rockets from './rocketsReducer';
+import missions from './missionsReducer';
 
 const rootReducer = combineReducers({
-  rockets: rocketsReducer,
+  rockets,
+  missions,
 });
 
 export default rootReducer;
