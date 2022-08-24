@@ -17,7 +17,7 @@ function Missions() {
         <MissionsItem
           key={mission.id}
           id={mission.id}
-          name={mission.name}
+          name={mission.rocketName}
           description={mission.description}
           reserved={mission.reserved}
         />
