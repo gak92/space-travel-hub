@@ -6,10 +6,12 @@ import RocketItem from './RocketItem';
 const Rockets = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getRockets());
-  }, []);
   const rockets = useSelector((state) => state.rockets);
+  useEffect(() => {
+    if (rockets.length === 0) {
+      dispatch(getRockets());
+    }
+  }, []);
 
   return (
     <div>
