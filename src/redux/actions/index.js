@@ -13,6 +13,7 @@ export const getRockets = createAsyncThunk(actions.GET_ROCKETS,
       rocketName: rocket.rocket_name,
       description: rocket.description,
       flickrImages: rocket.flickr_images[0],
+      reserved: false,
     }));
 
     return rockets;
@@ -30,3 +31,8 @@ export const getMissions = createAsyncThunk(actions.GET_MISSIONS,
 
     return missions;
   });
+
+export const rocketReservation = (id) => ({
+  type: actions.ROCKET_RESERVED,
+  payload: id,
+});
