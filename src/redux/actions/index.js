@@ -27,6 +27,7 @@ export const getMissions = createAsyncThunk(actions.GET_MISSIONS,
       id: mission.mission_id,
       rocketName: mission.mission_name,
       description: mission.description,
+      reserved: false,
     }));
 
     return missions;
@@ -34,5 +35,10 @@ export const getMissions = createAsyncThunk(actions.GET_MISSIONS,
 
 export const rocketReservation = (id) => ({
   type: actions.ROCKET_RESERVED,
+  payload: id,
+});
+
+export const missionsActions = (id) => ({
+  type: actions.MISSIONS_ACTIONS,
   payload: id,
 });

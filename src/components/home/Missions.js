@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissions } from '../../redux/actions/index';
+import MissionsItem from './MissionsItem';
 
 function Missions() {
   const dispatch = useDispatch();
@@ -13,12 +14,14 @@ function Missions() {
   return (
     <div>
       {missions.map((mission) => (
-        <div key={mission.id}>
-          <h2>{mission.rocketName}</h2>
-          <p>{mission.description}</p>
-        </div>
+        <MissionsItem
+          key={mission.id}
+          id={mission.id}
+          name={mission.name}
+          description={mission.description}
+          reserved={mission.reserved}
+        />
       ))}
-
     </div>
   );
 }
