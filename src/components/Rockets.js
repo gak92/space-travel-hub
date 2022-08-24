@@ -11,7 +11,6 @@ const Rockets = () => {
   }, []);
   const rockets = useSelector((state) => state.rockets);
 
-  // api.getRockets();
   return (
     <div>
       {rockets.map((rocket) => (
