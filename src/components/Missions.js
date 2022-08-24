@@ -1,8 +1,8 @@
 import React from 'react';
-import * as api from '../api';
+// import * as api from '../api';
 
 function Missions() {
-  api.getMissions();
+  // api.getMissions();
 
   return (
     <div>
