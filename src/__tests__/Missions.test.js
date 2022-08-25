@@ -24,7 +24,7 @@ it('Test Mission Item component', async () => {
       <Provider store={store}>
         <MissionsItem />
       </Provider>
-    </Router>
+    </Router>,
   );
 
   const btnElement = await screen.findAllByRole('button');
