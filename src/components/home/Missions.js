@@ -22,7 +22,7 @@ function Missions() {
             <th className="border">Mission</th>
             <th className="border">Description</th>
             <th className="border">Status</th>
-            <th className="border">.</th>
+            <th className="border" style={{ color: '#fff' }}>.</th>
           </tr>
         </thead>
         <tbody>

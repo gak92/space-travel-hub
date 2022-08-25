@@ -6,7 +6,7 @@ const Header = () => (
   <div className="header">
     <div className="logo-div">
       <img src={planet} alt="space" className="logo-image" />
-      <h1>Space Travelers hub</h1>
+      <h1 className="px-2">Space Travelers hub</h1>
     </div>
     <nav className="navbar">
       <NavLink to="/">Rockets</NavLink>
