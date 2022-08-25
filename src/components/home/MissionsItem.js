@@ -33,6 +33,7 @@ const MissionsItem = (props) => {
       <td className="align-middle border p-4">
         <Button
           type="button"
+          // role='button'
           onClick={buttonHandler}
           variant={reserved ? 'outline-danger' : 'outline-secondary'}
           style={{ minWidth: '150px' }}

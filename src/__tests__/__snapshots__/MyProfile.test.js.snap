@@ -5,41 +5,63 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <div>
-          <h2>
+      <div
+        class="d-flex"
+      >
+        <div
+          class="flex-fill"
+        >
+          <h2
+            class="px-4"
+          >
             My missions
           </h2>
-          <hr
-            class="horizontal-line"
+          <ul
+            class="d-flex flex-column bd-highlight mb-3"
           />
-          <div />
         </div>
-        <div>
-          <h2>
+        <div
+          class="flex-fill"
+        >
+          <h2
+            class="px-4"
+          >
             My Rockets
           </h2>
-          <ul />
+          <ul
+            class="d-flex flex-column bd-highlight mb-3"
+          />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      <div>
-        <h2>
+    <div
+      class="d-flex"
+    >
+      <div
+        class="flex-fill"
+      >
+        <h2
+          class="px-4"
+        >
           My missions
         </h2>
-        <hr
-          class="horizontal-line"
+        <ul
+          class="d-flex flex-column bd-highlight mb-3"
         />
-        <div />
       </div>
-      <div>
-        <h2>
+      <div
+        class="flex-fill"
+      >
+        <h2
+          class="px-4"
+        >
           My Rockets
         </h2>
-        <ul />
+        <ul
+          class="d-flex flex-column bd-highlight mb-3"
+        />
       </div>
     </div>
   </div>,

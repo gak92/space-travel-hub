@@ -16,7 +16,9 @@ Object {
             class="logo-image"
             src="planet.png"
           />
-          <h1>
+          <h1
+            class="px-2"
+          >
             Space Travelers hub
           </h1>
         </div>
@@ -36,6 +38,9 @@ Object {
           >
             Missions
           </a>
+          <div
+            class="vertical-line"
+          />
           <a
             class=""
             href="/myprofile"
@@ -58,7 +63,9 @@ Object {
           class="logo-image"
           src="planet.png"
         />
-        <h1>
+        <h1
+          class="px-2"
+        >
           Space Travelers hub
         </h1>
       </div>
@@ -78,6 +85,9 @@ Object {
         >
           Missions
         </a>
+        <div
+          class="vertical-line"
+        />
         <a
           class=""
           href="/myprofile"

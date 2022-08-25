@@ -4,6 +4,7 @@ import '@testing-library/jest-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Rockets from '../components/home/Rockets';
+import RocketItem from '../components/home/RocketItem';
 import store from '../redux/configureStore';
 
 it('Test rocket component', () => {
@@ -21,11 +22,11 @@ it('Test rocket Item component', async () => {
   render(
     <Provider store={store}>
       <Router>
-        <Rockets />
+        <RocketItem />
       </Router>
     </Provider>,
   );
 
   const btnElement = await screen.findAllByRole('button');
-  expect(btnElement).toHaveLength(4);
+  expect(btnElement).toHaveLength(1);
 });
