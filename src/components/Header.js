@@ -11,6 +11,7 @@ const Header = () => (
     <nav className="navbar">
       <NavLink to="/">Rockets</NavLink>
       <NavLink to="/missions">Missions</NavLink>
+      <div className="vertical-line" />
       <NavLink to="/myprofile">MyProfile</NavLink>
     </nav>
   </div>
