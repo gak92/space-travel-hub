@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { Button, Badge } from 'react-bootstrap';
 import { rocketReservation } from '../../redux/actions';
 
 const RocketItem = (props) => {
@@ -17,17 +18,28 @@ const RocketItem = (props) => {
   };
 
   return (
-    <div>
-      <div key={id}>
-        <img src={image} alt={name} />
-        <h2>{name}</h2>
-        <p>
-          <span>{reserved && 'Reserved'}</span>
-          {description}
-        </p>
-        <button type="button" id={id} onClick={handleReservation}>
-          {buttonText}
-        </button>
+    <div className="my-4">
+      <div key={id} className="d-flex gap-3">
+        <img className="w-25" src={image} alt={name} />
+        <div>
+          <h2>{name}</h2>
+          <p>
+            <span>
+              {reserved && (
+                <Badge bg="primary" className="mx-2 p-2">Reserved</Badge>
+              )}
+            </span>
+            {description}
+          </p>
+          <Button
+            type="button"
+            id={id}
+            onClick={handleReservation}
+            variant={reserved ? 'outline-secondary' : 'primary'}
+          >
+            {buttonText}
+          </Button>
+        </div>
       </div>
     </div>
   );

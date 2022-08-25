@@ -4,11 +4,15 @@
   padding: 0;
 }
 
+.App {
+  padding: 0.2rem 1rem;
+}
+
 a {
   text-decoration: none;
 }
 
-a:active {
+a.active {
   text-decoration: underline;
 }
 
@@ -16,12 +20,13 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 0.2rem 2rem;
 }
 
 .logo-div {
   display: flex;
   align-items: center;
+  max-width: 400px;
 }
 
 .logo-image {
@@ -30,5 +35,5 @@ a:active {
 
 .navbar {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
