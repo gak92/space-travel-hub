@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-[Live Demo coming soon...](#)
+[Live Demo](https://hub-space-travelers.netlify.app/)
 
 ## Getting Started
 
