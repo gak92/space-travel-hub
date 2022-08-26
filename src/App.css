@@ -4,11 +4,19 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+.App {
+  padding: 0.2rem 1rem;
+}
+
 a {
   text-decoration: none;
 }
 
-a:active {
+a.active {
   text-decoration: underline;
 }
 
@@ -16,12 +24,13 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 0.1rem 1.5rem;
 }
 
 .logo-div {
   display: flex;
   align-items: center;
+  max-width: 400px;
 }
 
 .logo-image {
@@ -30,5 +39,11 @@ a:active {
 
 .navbar {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.vertical-line {
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #808080;
 }
