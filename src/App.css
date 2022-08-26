@@ -30,7 +30,6 @@ a.active {
 .logo-div {
   display: flex;
   align-items: center;
-  max-width: 400px;
 }
 
 .logo-image {
